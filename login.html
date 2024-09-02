@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="img/bank-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body id="cajero">
+    <section class ="bienvenido">
+    <div>
+        <h1>Bienvenido </h1>
+    </div>
+    </section>
+    <div class = 'inicio'>
+        <div>
+            <button id="btnConsultar" onclick="consul(event)">Consultar Saldo</button>
+        </div>
+        <div> 
+            <button id="btnIngresar" onclick="ingresarMnt(event)">Ingresar efectivo</button>
+            <input type="text" id="ingMnt" placeholder="Ingresa el monto"
+            class="input">
+        </div>
+        <div>
+            <button id="btnRetirar" onclick="retirarMnt(event)">Retirar efectivo</button>
+            <input type="text" id="username" placeholder="Monto a retirar"
+            class="input">
+        </div>
+        <div>
+            <button id="btnClose" onclick="cerrarSes(event)">Cerrar sesión</button>
+        </div>
+        <div>
+            <p id="mensaje"></p>
+        </div>
+       
+       
+    </div>
+</body>
+</html>
